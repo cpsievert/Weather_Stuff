@@ -12,7 +12,7 @@ colorscale <- data.frame(breaks, colors)
 plot_ly() %>%
   add_sf(
     data = sf::st_as_sf(maps::map("world", plot = FALSE, fill = TRUE)), 
-    color = I("black"), fillcolor = "transparent", hoverinfo = "none"
+    color = I("black"), fillcolor = "transparent", hoverinfo = "none", size = I(1)
   ) %>%
   add_contour(
     z = dat$olr, 
