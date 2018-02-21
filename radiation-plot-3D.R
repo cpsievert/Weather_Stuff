@@ -49,5 +49,11 @@ plot_ly() %>%
   ) %>%
   layout(
     title = "Outgoing Longwave Radiation Anomalies<br>Dec 2017-Jan 2018",
-    scene = list(xaxis = empty_axis, yaxis = empty_axis, zaxis = empty_axis)
+    scene = list(
+      xaxis = empty_axis, 
+      yaxis = empty_axis, 
+      zaxis = empty_axis,
+      aspectratio = list(x = 1, y = 1, z = 1),
+      camera = list(eye = list(x = 2, y = 1.15, z = 0.5))
+    )
   )
