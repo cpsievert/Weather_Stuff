@@ -49,6 +49,7 @@ plot_ly() %>%
   ) %>%
   layout(
     title = "Outgoing Longwave Radiation Anomalies<br>Dec 2017-Jan 2018",
+    showlegend = FALSE,
     scene = list(
       xaxis = empty_axis, 
       yaxis = empty_axis, 
